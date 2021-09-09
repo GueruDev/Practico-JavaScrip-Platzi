@@ -1,0 +1,83 @@
+/* ESTILOS BASICOS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* ETIQUETAS GENERALES */
+
+main{
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgba(9, 51, 189, 0.521);
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+.up__img,.up__h2{
+    display: inline-block;
+}
+.up__img{
+    height:5rem ;
+    border-radius: 50%;
+    margin-right:1rem ;
+}
+.up__h2{
+    margin: 2rem 0;
+    font-weight: 200;
+}
+
+/* MAIN TEXT */
+
+.main-introduce{
+    text-align: center;
+}
+.main-introduce__h1{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.main-introduce__p{
+    line-height:3rem;
+    font-size:2rem;
+}
+
+/* FIGURES */
+
+.container-figures{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align: center;
+}
+.cuadrado{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.cuadrado > svg{
+    margin:0 auto;
+}
+.cuadrado-form__input{
+    display: block;
+    width: 8rem;
+    margin: 0 auto;
+}
