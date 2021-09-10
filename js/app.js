@@ -23,14 +23,11 @@ function areaTriangulo(altura,base){
 
 function whoTriangulo (lado1,lado2,lado3){
     if (lado1 == lado2 && lado2 == lado3){
-        console.log("Este es un equilatero");
         l = lado1;
         const equilatero = ((l ** 2)*(Math.pow(3,0.5))/4); 
-        console.log(equilatero);
+        alert(`Este es un Triángulo equilatero y su área es ${equilatero}.`);
     }
     else if (lado1 == lado2 || lado2 == lado3){
-        console.log("Este es un isosceles");
-        console.log(lado1);
         if (lado1 != lado2){
             ladodif = lado1;
         };
@@ -39,17 +36,15 @@ function whoTriangulo (lado1,lado2,lado3){
         };
         if (lado2 != lado3){
             ladodif = lado3;
-            console.log(ladodif);
         };
         if (lado1 == lado2){
             ladosame = lado1;
-            console.log(ladosame);
         };
         if (lado2 == lado3){
             ladosame = value3;
         };
         const h = Math.pow((Math.pow(ladosame,2) - (Math.pow(ladodif,2) / 4 )),0.5);
-        console.log(h);
+        alert(`Este es un Triángulo isósceles y su área es ${h}.`);
     }
     else{
         console.log("Este es un escaleno")
@@ -58,7 +53,7 @@ function whoTriangulo (lado1,lado2,lado3){
         c = lado3;
         const sp = (a + b + c) / 2;
         const escaleno = Math.pow(sp * (sp - a) * (sp - b) * (sp-c) , 0.5);
-        console.log(escaleno);
+        alert(`Este es un Triángulo escaleno y su área es ${escaleno}.`);
     } 
 }
 
@@ -91,10 +86,29 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
+
+//TRIANGULO
+
 function calcularPerimetroTriangulo(){
-    const input1 = document.getElementById("inputPerimetroTriangulo");
-    const lado1 = input1.lado1;
-    
-    const perimetro = perimetroTriangulo(lado1,);
-    alert(perimetro);
+    let input = document.getElementById("inputPerimetroTriangulo1");
+    const l1 = Number(input.value);
+    console.log(l1);
+    input = document.getElementById("inputPerimetroTriangulo2");
+    const l2 = Number(input.value);
+    console.log(l2);
+    input = document.getElementById("inputPerimetroTriangulo3")
+    const l3 = Number(input.value);
+    console.log(l3);
+    const perimetro = perimetroTriangulo(l1,l2,l3);
+    alert (`El perímetro de este triángulo es ${perimetro}`);
+}
+function calcularAreaTriangulo(){
+    let input = document.getElementById("inputAreaTriangulo1");
+    const l1 = Number(input.value);
+    input = document.getElementById("inputAreaTriangulo2");
+    const l2 = Number(input.value);
+    input = document.getElementById("inputAreaTriangulo3");
+    const l3 = Number(input.value);
+    console.log(`${l1} ${l2} ${l3}`);
+    const area = whoTriangulo(l1,l2,l3);
 }

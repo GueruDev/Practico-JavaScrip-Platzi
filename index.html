@@ -25,7 +25,9 @@
                 Calculadora de áreas y perímetros
             </h1>
             <p class="main-introduce__p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugit animi molestiae officia ipsa quae vel officiis voluptate explicabo cumque harum debitis assumenda perspiciatis tempora pariatur magnam, quos rerum ducimus eveniet doloribus vitae illum? Amet nihil reiciendis est facere dignissimos accusamus id, earum officia eos odit obcaecati, distinctio praesentium similique?
+                ¡Hola! Un gusto posible empleador este es una de mis prácticas del <a href="https://platzi.com/clases/javascript-practico/">curso práctico de JavaScript</a> del cual el profesor es Juan David Castro.
+
+                Este proyecto es una calculadora de perímetros y áreas de los siguientes polígonos: cuadrado, triángulo y círculo.
             </p>
         </section>
         <div class="container-figures">
@@ -37,6 +39,7 @@
                     fill="RoyalBlue" />
                 </svg>
                 <p class="cuadrado__p">Perímetro</p>
+                <p class="cuadrado__p--trans">(Coloca el valor de un lado)</p>
                 <form action="" class="cuadrado-form">
                     <label for="" class="cuadrado-form__label">
                     </label>
@@ -59,18 +62,25 @@
                     stroke="purple" stroke-width=2 fill="aqua"/> 
                 </svg> 
                 <p class="triangulo__p">Perímetro</p>
+                <p class="triangulo__p--trans">(Coloca el valor de los 3 lados)</p>
                 <form action="" class="triangulo-form">
                     <label for="" class="triangulo-form__label">
                     </label>
-                    <input id="inputPerimetroTriangulo" placeholder="Valor" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo1" placeholder="Valor" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo2" placeholder="Valor" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo3" placeholder="Valor" type="number" class="triangulo-form__input">
                     <button type="button" onclick="calcularPerimetroTriangulo()" class="triangulo-form__button">Calcular</button>
                 </form>
                 <p class="triangulo__p">Área</p>
                 <form action="" class="form">
                     <label for="" class="form__label">
                     </label>
-                    <input id="inputAreaTriangulo" placeholder="Valor" type="number" class="triangulo-form__input"
-                    class="cuadrad-form__input" >
+                    <input id="inputAreaTriangulo1" placeholder="Valor" type="number" class="triangulo-form__input"
+                    class="triangulo-form__input" >
+                    <input id="inputAreaTriangulo2" placeholder="Valor" type="number" class="triangulo-form__input"
+                    class="triangulo-form__input" >
+                    <input id="inputAreaTriangulo3" placeholder="Valor" type="number" class="triangulo-form__input"
+                    class="triangulo-form__input" >
                     <button type="button" onclick="calcularAreaTriangulo()" class="triangulo-form__button">Calcular</button>
                 </form>
             </section>

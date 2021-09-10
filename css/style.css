@@ -12,6 +12,11 @@ body{
     font-size: 1.6rem;
     font-family: 'Poppins',sans-serif;
 }
+a{
+    text-decoration: none;
+    color:rgba(9, 51, 189, 0.774);
+    font-weight: bold;
+}
 
 /* ETIQUETAS GENERALES */
 
@@ -65,19 +70,21 @@ header{
 .container-figures{
     display: flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-between;
     text-align: center;
 }
-.cuadrado{
+.cuadrado, .triangulo{
     display: flex;
     flex-direction:column;
-    justify-content: center;
 }
-.cuadrado > svg{
+.cuadrado > svg ,.triangulo > svg{
     margin:0 auto;
 }
-.cuadrado-form__input{
-    display: block;
+.cuadrado-form__input,.triangulo-form__input{
     width: 8rem;
     margin: 0 auto;
+}
+.cuadrado-form__button,.triangulo-form__button{
+    display: block;
+    margin: 1rem auto;
 }
