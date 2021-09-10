@@ -109,6 +109,17 @@ function calcularAreaTriangulo(){
     const l2 = Number(input.value);
     input = document.getElementById("inputAreaTriangulo3");
     const l3 = Number(input.value);
-    console.log(`${l1} ${l2} ${l3}`);
-    const area = whoTriangulo(l1,l2,l3);
+    let area = whoTriangulo(l1,l2,l3);
+}
+function calcularPerimetroCirculo(){
+    let input = document.getElementById("inputPerimetroCirculo")
+    const p = Number(input.value);
+    let pp = perimetroCirculo(p);
+    alert(`El perímetro de la círcuferencia es ${pp}.`);
+}
+function calcularAreaCirculo(){
+    let input = document.getElementById("inputAreaCirculo");
+    const r = Number(input.value);
+    let area = areaCirculo(r);
+    alert(`El área del círculo es ${area}.`);
 }

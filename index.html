@@ -25,7 +25,7 @@
                 Calculadora de áreas y perímetros
             </h1>
             <p class="main-introduce__p">
-                ¡Hola! Un gusto posible empleador este es una de mis prácticas del <a href="https://platzi.com/clases/javascript-practico/">curso práctico de JavaScript</a> del cual el profesor es Juan David Castro.
+                ¡Hola! Un gusto posible empleador este es una de mis prácticas del <a href="https://platzi.com/clases/javascript-practico/">curso práctico de JavaScript</a> en Platzi, del cual el profesor es <a href="https://twitter.com/fjuandc">Juan David Castro</a>.
 
                 Este proyecto es una calculadora de perímetros y áreas de los siguientes polígonos: cuadrado, triángulo y círculo.
             </p>
@@ -66,26 +66,51 @@
                 <form action="" class="triangulo-form">
                     <label for="" class="triangulo-form__label">
                     </label>
-                    <input id="inputPerimetroTriangulo1" placeholder="Valor" type="number" class="triangulo-form__input">
-                    <input id="inputPerimetroTriangulo2" placeholder="Valor" type="number" class="triangulo-form__input">
-                    <input id="inputPerimetroTriangulo3" placeholder="Valor" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo1" placeholder="Valor1" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo2" placeholder="Valor2" type="number" class="triangulo-form__input">
+                    <input id="inputPerimetroTriangulo3" placeholder="Valor3" type="number" class="triangulo-form__input">
                     <button type="button" onclick="calcularPerimetroTriangulo()" class="triangulo-form__button">Calcular</button>
                 </form>
                 <p class="triangulo__p">Área</p>
                 <form action="" class="form">
                     <label for="" class="form__label">
                     </label>
-                    <input id="inputAreaTriangulo1" placeholder="Valor" type="number" class="triangulo-form__input"
+                    <input id="inputAreaTriangulo1" placeholder="Valor1" type="number" class="triangulo-form__input"
                     class="triangulo-form__input" >
-                    <input id="inputAreaTriangulo2" placeholder="Valor" type="number" class="triangulo-form__input"
+                    <input id="inputAreaTriangulo2" placeholder="Valor2" type="number" class="triangulo-form__input"
                     class="triangulo-form__input" >
-                    <input id="inputAreaTriangulo3" placeholder="Valor" type="number" class="triangulo-form__input"
+                    <input id="inputAreaTriangulo3" placeholder="Valor3" type="number" class="triangulo-form__input"
                     class="triangulo-form__input" >
                     <button type="button" onclick="calcularAreaTriangulo()" class="triangulo-form__button">Calcular</button>
                 </form>
             </section>
+            <section class="circulo">
+                <h3 class="circulo__h3" >Círculo</h3>
+                <svg width=100 height=100>
+                    <circle cx=50 cy=50 r=45 stroke="blue" stroke-width=2 fill="orange">
+                </svg>
+                <p class="circulo__p">Perímetro</p>
+                <p class="circulo__p--trans">(Coloca el valor del radio)</p>
+                <form action="" class="circulo-form">
+                    <label for="" class="circulo-form__label">
+                    </label>
+                    <input id="inputPerimetroCirculo" placeholder="Valor" type="number" class="circulo-form__input">
+                    <button type="button" onclick="calcularPerimetroCirculo()" class="circulo-form__button">Calcular</button>
+                </form>
+                <p class="circulo__p">Área</p>
+                <form action="" class="form">
+                    <label for="" class="form__label">
+                    </label>
+                    <input id="inputAreaCirculo" placeholder="Valor" type="number" class="circulo-form__input"
+                    class="cuadrad-form__input" >
+                    <button type="button" onclick="calcularAreaCirculo()" class="circulo-form__button">Calcular</button>
+                </form>
+            </section>
         </div>
     </main>
+    <footer>
+        <p class="footer__p">Página web creada por <a href="" class="footer__a">SteelMods</a>.</p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
